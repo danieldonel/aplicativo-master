@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: url(bg.png);
+            background-clip: border-box;
+            background-size: 100%;
+            width: 100%;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+                   
+        }
+        
+        .titulo
+        {
+            position: absolute;
+            border-radius: 50px;
+            left: -10px;
+            width: 100%;   
+            top: 320px;
+            animation: anima_titulo 3s
+        }
+
+        @keyframes anima_titulo
+        {
+            0%   { opacity: 0;}
+            100% { opacity: 1; }
+        }
+
+        .abelha
+        {
+            position: absolute;
+            border-radius: 50px;
+            left: 0px;
+            width: 15%;   
+            top: 0px;
+            animation: anima_abelha 15s infinite;
+        }
+
+        @keyframes anima_abelha
+        {
+            0%   { left: 0px; top: 0px;}
+            25% {left: 300px; top: 0px;}
+            50% {left: 300px; top: 650px;}
+            75% {left: 0px; top: 650px;}
+        }
+
+        .logo
+        {
+            position: absolute;
+            border-radius: 50px;
+            left: -95px;
+            width: 150%;   
+            top: 170px;
+            animation: anima_logo 3s;
+        }
+
+        @keyframes anima_logo
+        {
+            0%   { opacity: 0; }
+            100% { opacity: 1;  }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="cupcake.png" class="logo">
+    <img src="abelha.gif" class="abelha">
+    <img src="Titulo.png" class="titulo">
+
+
+</body>
+</html>
